@@ -1,33 +1,3 @@
-**Cool thing to review (05 水曜日)**
-
-I don't remember how I found this site, but I hope I buy something from here in
-the near future
-
-- [No starch press](https://nostarch.com/) | #wishlist
-
-**On next steps professionally (08 土曜日)**
-
-Lately I've been thinking a lot about personal and professional growth, and
-what I should focus the following years. I have a new role as Staff Engineer,
-and figuring out how to be more effective has been tricky, and with that train
-of thought I wonder what would the next stage in my career would look like 🤔
-
-With that, I found these pieces of content I have yet to consume and/or write
-notes on:
-
-- [The Coding Career Handbook](https://www.learninpublic.org/toc) | #wishlist
-- [Designing the Ideal Bootstrapped Business with Jason
-  Cohen](https://www.youtube.com/watch?v=otbnC2zE2rw&list=WL&index=10&t=3s&ab_channel=MicroConf)
-    - **Predictable** acquisition of **recurring** revenue with **annual**
-      prepay in a **good market** creates a **cash machine**  | #biz
-
-**On building a second brain (09 日曜日)**
-
-Starting out this repository got me reviewing my entire Notion workspace. I got
-pretty overwhelmed as there is a lot of content there. I've learned that, I
-should be more mindful of what I consume and distil useful information. From
-all the bookmarks, I have no idea why I saved them.
-
 **On latency numbers (10 月曜日)**
 
 I always forget this numbers
@@ -104,7 +74,6 @@ brain](https://www.audible.com/pd/Building-a-Second-Brain-Audiobook/B09MGHPVP4)
 
 Should there be a workspace per region?
 
-
 **On Dev Principles by Id software (16 日曜日)**
 
 This was a cool conf, want to watch it again and pull some reference
@@ -129,7 +98,7 @@ The proposal, is to do it through RLBox, which:
 Already applied in Firefox
 
 [Source](https://www.youtube.com/watch?v=23rV-s3DKWM)
-[USENIX Enigma 2021 - The Limits of Sandboxing and Next Steps](https://www.youtube.com/watch?v=vYirbKQ90IY&ab_channel=USENIXEnigmaConference)
+[The Limits of Sandboxing and Next Steps](https://www.youtube.com/watch?v=vYirbKQ90IY)
 [RLBox](https://rlbox.dev/)
 
 
