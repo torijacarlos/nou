@@ -18,6 +18,13 @@ in-betweens
 
 - [Inbox](./inbox.md)
 
+## Resources
+
+Mostly random stuff I've gathered around frameworks, languages and anything.
+File titles hopefully are enough to find stuff.
+
+- [Resources](./resources)
+
 ## Projects 
 
 - Personal finance application in

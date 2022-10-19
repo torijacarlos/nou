@@ -36,9 +36,9 @@ session.query(SomeClass)
 The end result is the same, but the first one hides the fact that it creates
 the session and keeps it available for further use within the registry
 
-Now, the first one I think can be more explicit about cleaning up. Using the
-registry directly often end up meaning letting the underlying API framework
-handling the removal. Something like
+The real problem is understanding the lifecycle and when to clean up. The
+proposed solution in the docs is to just let the underlying API framework
+handling the removal of the session. Something like:
 
 ```py
 @on_request_end
@@ -46,11 +46,10 @@ def remove_session(req):
     session_registry.remove()
 ```
 
-When can this be a problem?
+But if you handle multiple DB connections, you can hide the fact that you need
+to clean the session before querying other DB.
 
-- Handling multiple DB connections as the engine used is set when creating the session
-- ¯\_(ツ)_/¯ Haven't found any other cases, unless you are actually fighting against SqlAlchemy's docs
 
-[docs](https://docs.sqlalchemy.org/en/14/orm/contextual.html#using-thread-local-scope-with-web-applications)
+- [docs](https://docs.sqlalchemy.org/en/14/orm/contextual.html#using-thread-local-scope-with-web-applications)
 
 ----------------------------------------------------------------------

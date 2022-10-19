@@ -44,8 +44,8 @@ location / {
 
 When possible, avoid a TCP connection and use a plain socket instead.
 
-[Source](https://www.revsys.com/12days/)
-[Rate limit](https://lincolnloop.com/blog/rate-limiting-nginx/) *haven't read this one yet* 👀
+- [Source](https://www.revsys.com/12days/)
+- [Rate limit](https://lincolnloop.com/blog/rate-limiting-nginx/) *haven't read this one yet* 👀
 
 
 

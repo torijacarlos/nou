@@ -97,9 +97,45 @@ The proposal, is to do it through RLBox, which:
 
 Already applied in Firefox
 
-[Source](https://www.youtube.com/watch?v=23rV-s3DKWM)
-[The Limits of Sandboxing and Next Steps](https://www.youtube.com/watch?v=vYirbKQ90IY)
-[RLBox](https://rlbox.dev/)
+- [Source](https://www.youtube.com/watch?v=23rV-s3DKWM)
+- [The Limits of Sandboxing and Next Steps](https://www.youtube.com/watch?v=vYirbKQ90IY)
+- [RLBox](https://rlbox.dev/)
 
 
+**On No silver bullet (19 水曜日)**
 
+*For reference, this paper is from 1986 and it has aged like a fine wine.*
+
+There is currently, no process, tool, paradigm, rule, etc, that ensures the
+reliability of software. And even though there are attempts (and I would add,
+cargo cults) around the problem, there's no actual solution.
+
+
+The difficulties are divided in:
+- Essence: Inherent in the nature of the software.
+- Accidents: Difficulties that attend its production but that are not inherent.
+
+The essence for software is representing any conceptual contruct with abstract concepts.
+Some properties of this essence are:
+- Complexity: A software entity size, the number of components and interactions
+  between them, its constant change and growth
+- Conformity: Software most interface with established infrastructure (be it
+  hardware like CPU, software like an OS or regulations like PCI)
+- Changeability: The *successful* usage of software demands extending it beyond
+  its original capabilities (new use cases)
+- Invisibility: Software has no physical representation. Diagrams help
+  understand components/parts, which we may compose and try to see in layers
+  (looking at you c4model.com), but it is not possible to see the entire system
+  in a single diagram
+
+Some attempts trying to fix the accidental difficulties:
+
+- High-level languages: The abstraction of concrete machine concerns (bits,
+  registers) allowing developers focus on abstract concepts (data structures, operations)
+- Time-sharing: Being able to perform more than one operation with the CPU
+- Unified programming environments: Extrapolating I think this includes package
+  managers and using open-source software and libraries
+
+@page 6 Hopes for the Silver
+
+[Source](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)
