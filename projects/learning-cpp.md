@@ -7,7 +7,7 @@ tags: #c #cpp #gamedev
 
 -------------------
 
-[Day 13](https://www.youtube.com/watch?v=Lt9DfMzZ9sI)
+**[HMH - Day 13](https://www.youtube.com/watch?v=Lt9DfMzZ9sI)**
 
 I dont know if I got this correctly, but the purpose of `union` is to transpose
 the memory of something into different data type 
@@ -40,8 +40,17 @@ union sth {
 //
 //             SmallBitValue- -- -- --
 //             BigBitValue -- -- -- -- -- -- -- -- -- -- -- --
+//
+// The size is halfed but for the sake of the illustration (～￣▽￣)～)
 ```
 
 [Source 6.7.2.1/16](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n2310.pdf)
 
 -------------------
+
+## Learning resources
+
+### Youtube channels
+
+- [CppCast](https://www.youtube.com/channel/UCuCjADS4u3uJDTqUaG0H9dA)
+- [CppCon](https://www.youtube.com/user/CppCon)

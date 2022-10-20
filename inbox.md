@@ -136,6 +136,29 @@ Some attempts trying to fix the accidental difficulties:
 - Unified programming environments: Extrapolating I think this includes package
   managers and using open-source software and libraries
 
-@page 6 Hopes for the Silver
+As for the proposed solutions to fix the essence so far:
+
+- More high level languages won't solve the problem, they just simplify the
+  abstractions for data flow and structures
+- Paradigms do not solve the problem (if they did, there wouldn't be a
+  discussion between using oop or functional or whatever)
+- On artificial inteligence, expert systems and automatic programming, I'll
+  quote verbatim this: *"the hard thing about building software is deciding
+  what to say, not saying it"* and here's a
+  [demo](https://www.youtube.com/watch?v=Xw_qbJp52cY) that shows the status
+  quo. How would it handle actual complexity?
+- For graphical programming I guess the "state of the art" is Unreal Engine's
+  Blueprint Visual Scripting but
+  [here](https://forums.unrealengine.com/t/how-tidy-multiple-line-traces/242770/7)
+  is why I think that is a step in the wrong direction 
+- I don't comments on the rest but to summarize
+    - Program Verification: Automated testing? I dunno ¯\_(ツ)_/¯ 
+    - Environments and tools: The newer tools seem to be going backwards,
+      adding even more unnecessary complexity
+    - workstations: Computers are way more powerful than we know. We just got
+      used to lousy and slow software.
+
+
+@Promising Attacks on the Conceptual Essence Page 12
 
 [Source](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)
