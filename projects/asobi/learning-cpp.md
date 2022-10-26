@@ -52,9 +52,8 @@ tags: #audio #directsound #cpp
 
 [IDirectSoundBuffer](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/mt708923(v=vs.85))
 
-According to the docs, there is no need to create a primary buffer. 
-
-
+First of all, I'm messing up the write process to the audio buffer, so let's go
+back to some basics. We are using a Cyclic buffer 
 
 
 

@@ -14,6 +14,8 @@ For quick reference:
 
 Source: [Latency Numbers Programmer Should Know](https://www.youtube.com/watch?v=FqR5vESuKe0)
 
+======================================================================================================
+
 **On Cloud Native Disaster Recovery**
 
 @Considerations on Availability and Consistency
@@ -53,6 +55,8 @@ Eventual consistency does not mean eventual correctness.
 - [CNDR for Stateful
   workloads](https://docs.google.com/document/d/10HcaLqPz8o8oXpbSNbPI0thVMoF3usTG3CAhq4Umz4w/edit#)
 
+======================================================================================================
+
 **On Building a second brain** 
 
 The "cold storage" comment for projects resonated with me:
@@ -70,15 +74,21 @@ Practical steps
 [Building a second
 brain](https://www.audible.com/pd/Building-a-Second-Brain-Audiobook/B09MGHPVP4)
 
+======================================================================================================
+
 **On Terraform Cloud Workspaces (11 火曜日)**
 
 Should there be a workspace per region?
+
+======================================================================================================
 
 **On Dev Principles by Id software (16 日曜日)**
 
 This was a cool conf, want to watch it again and pull some reference
 
 [Source](https://www.youtube.com/watch?v=IzqdZAYcwfY)
+
+======================================================================================================
 
 **On handling (c/cpp) dependencies (17 月曜日)**
 
@@ -101,6 +111,7 @@ Already applied in Firefox
 - [The Limits of Sandboxing and Next Steps](https://www.youtube.com/watch?v=vYirbKQ90IY)
 - [RLBox](https://rlbox.dev/)
 
+======================================================================================================
 
 **On No silver bullet (19 水曜日)**
 
@@ -162,3 +173,50 @@ As for the proposed solutions to fix the essence so far:
 @Promising Attacks on the Conceptual Essence Page 12
 
 [Source](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)
+
+======================================================================================================
+
+**On The only unbreakable law (25 月曜日)**
+
+Basically points to Conway's Law [How committees
+invent?](https://www.melconway.com/Home/pdf/committees.pdf) as a good candidate
+for a Software Architecture law agree. He also mentions:
+- Brooke's Law which addresses Communication constraints [The mythical
+  man-month](https://www.amazon.com.mx/Mythical-Man-Month-Essays-Software-Engineering/dp/0201835959/ref=sr_1_1)
+- Amdahl's Law which addresses non parallelizable dependencies
+
+Communication within a team has (or at least should have) close-to-zero
+overhead. The only communication that has zero overhead is with oneself.
+Anywhere there is a need for communication, there are constraints that need to
+be addressed:
+- How much can I communicate. I literally mean volume of information
+- Am I communicating effectively? Can the other person/team understand what we
+  are saying?
+- Are our goals aligned? Do we want the same things?
+
+If there is any divide within an organization, you are creating the need for
+communication channels with varying bandwidth. 
+
+This adds complexity/friction which determines the kind of system you are
+capable of designing as an team. 
+
+If there is a need for a communication channel between two teams (let's say
+infrastructure and development) there is inevitably going to be some sort of
+responsibility segregation given it removes the need for given communication
+channel, or at least reduces the amount of information that has to go through
+
+Any kind of organizational structure created (for the orgchart or the codebase)
+comes from the need of simplifying a problem that may be too complex to solve
+with the current capabilities available. Divide and conquer as some may say.
+But its adding accidental complexity to the actual problem.
+
+[Source](https://www.youtube.com/watch?v=5IUj1EZwpJY)
+
+======================================================================================================
+
+**On where Does bad code come from? (26 月曜日)**
+
+[Source](https://www.youtube.com/watch?v=7YpFGkG-u1w)
+
+======================================================================================================
+
