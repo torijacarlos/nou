@@ -22,7 +22,7 @@ We can do it:
 * SPs may choose to **not** be in sync with IdP for several reasons, like
   compliance or regulations
 
---------------------------------------------------------------------------------------------
+======================================================================================================
 
 # SAML (Security Assertion Markup Language)
 

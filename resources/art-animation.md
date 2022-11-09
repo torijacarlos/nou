@@ -7,13 +7,21 @@ tags: #art #animation #drawing #manga #pixelart
 - For the youtube channels, I have them here instead of as a subscription,
   because I don't want them to appear randomly on my feed.
 
+
 ## Learning resources
+
+### Channels
 
 - [AKIHITO YOSHITOMI](https://www.youtube.com/channel/UCeySBnV71dyC-gwqapq9NwQ) #drawing
 - [AdamCYounis](https://www.youtube.com/channel/UC08QfQDLAd9D7aYPFgBUIng) #pixelart
 - [Brandon James Greer](https://www.youtube.com/channel/UCC26K7LTSrJK0BPAUyyvtQg) #pixelart
 - [Manga Materials](https://www.youtube.com/channel/UCnx8zKs3c3yeFPYQ2QzMqLA) #drawing ✨ 
 - [Marc Brunet](https://www.youtube.com/c/bluefley00)
+
+### Videos
+
+- [Aseprite Tutorial For Beginners](https://www.youtube.com/watch?v=tFsETEP01k8) #pixelart
+- [20 Hints and Tips for Aseprite](https://www.youtube.com/watch?v=va-sxKT4-qU) #pixelart
 
 ## Entertainment
 

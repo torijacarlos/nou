@@ -1,59 +1,4 @@
-**On latency numbers (10 月曜日)**
-
-I always forget this numbers
-
-For quick reference:
-- 1-10ns: L1 and L2 Cache
-- 100-1000ns: System call
-- 10-100micros: 1MB sequential read. 
-- 100-1000micros: SSD Write. Intrazone (within AZ) network round trip. Redis
-  get
-- 1-10ms: Interzone (AZ to AZ) round trip
-- 100-1000ms: TLS Handshake
-- 1s: 1GB Transfer interzone
-
-Source: [Latency Numbers Programmer Should Know](https://www.youtube.com/watch?v=FqR5vESuKe0)
-
-======================================================================================================
-
-**On Cloud Native Disaster Recovery**
-
-@Considerations on Availability and Consistency
-
-*Failure domains* are areas of an IT system in which the components within that
-area may fail all at the same time due to a single event. When deploying a
-distributed stateful workload, one should consider the various failure domains
-at hand, and make sure that the various instances of the stateful workload are
-positioned in different failure domains.
-
-@High Availability
-
-High Availability (HA) is a property of a system that allows it to continue
-performing normally in the presence of failures. The foundational idea of HA is
-that the Mean Time to Repair (MTTR), a failure must be much shorter than the
-Mean Time Between Failures (MTBF) (MTTR << MTBF), allowing something or someone
-to repair the broken component before another components breaks A proper
-monitoring and alerting system must be in place. Otherwise, an HA system would
-just keep functioning until the second failure occurs (~2xMTBF) and then still
-be broken, defeating the initial purpose of HA. If a piece of software is
-designed to keep working when the peers are unreachable, its state may become
-inconsistent. On the other hand, if a piece of software is designed to stop
-when the peers are unreachable, then it will maintain consistency, but will not
-be available.
-
-@Consistency
-
-Consistency is the property of a distributed stateful workload where all the
-instances of the workload “observe” the same state. Temporarily relaxing
-consistency, building stateful workloads that horizontally scale to a
-theoretically unlimited size, gave birth to an explosion of eventually
-consistent workloads. Eventual consistency is not suitable in every scenario.
-Eventual consistency does not mean eventual correctness.
-
-@The CAP Theorem
-
-- [CNDR for Stateful
-  workloads](https://docs.google.com/document/d/10HcaLqPz8o8oXpbSNbPI0thVMoF3usTG3CAhq4Umz4w/edit#)
+## October
 
 ======================================================================================================
 
@@ -76,141 +21,11 @@ brain](https://www.audible.com/pd/Building-a-Second-Brain-Audiobook/B09MGHPVP4)
 
 ======================================================================================================
 
-**On Terraform Cloud Workspaces (11 火曜日)**
-
-Should there be a workspace per region?
-
-======================================================================================================
-
 **On Dev Principles by Id software (16 日曜日)**
 
 This was a cool conf, want to watch it again and pull some reference
 
 [Source](https://www.youtube.com/watch?v=IzqdZAYcwfY)
-
-======================================================================================================
-
-**On handling (c/cpp) dependencies (17 月曜日)**
-
-tags: #security #rlbox #wasm
-
-Most bugs, according to case [studies](https://www.chromium.org/Home/chromium-security/memory-safety/), 
-are memory safety bugs, and just saying "Let's move everything to Rust" (or any
-language)  is not easy as there are Billions of (reliable/time-tested) lines of code
-
-IPC: Isolating everything with process sandboxing has a performance cost
-
-In-process sandboxing isolates libraries in WASM sandboxes. 
-The proposal, is to do it through RLBox, which:
-- takes care of ABI convertions and data types marshalling
-- tracks missing security checks
-
-Already applied in Firefox
-
-- [Source](https://www.youtube.com/watch?v=23rV-s3DKWM)
-- [The Limits of Sandboxing and Next Steps](https://www.youtube.com/watch?v=vYirbKQ90IY)
-- [RLBox](https://rlbox.dev/)
-
-======================================================================================================
-
-**On No silver bullet (19 水曜日)**
-
-*For reference, this paper is from 1986 and it has aged like a fine wine.*
-
-There is currently, no process, tool, paradigm, rule, etc, that ensures the
-reliability of software. And even though there are attempts (and I would add,
-cargo cults) around the problem, there's no actual solution.
-
-
-The difficulties are divided in:
-- Essence: Inherent in the nature of the software.
-- Accidents: Difficulties that attend its production but that are not inherent.
-
-The essence for software is representing any conceptual contruct with abstract concepts.
-Some properties of this essence are:
-- Complexity: A software entity size, the number of components and interactions
-  between them, its constant change and growth
-- Conformity: Software most interface with established infrastructure (be it
-  hardware like CPU, software like an OS or regulations like PCI)
-- Changeability: The *successful* usage of software demands extending it beyond
-  its original capabilities (new use cases)
-- Invisibility: Software has no physical representation. Diagrams help
-  understand components/parts, which we may compose and try to see in layers
-  (looking at you c4model.com), but it is not possible to see the entire system
-  in a single diagram
-
-Some attempts trying to fix the accidental difficulties:
-
-- High-level languages: The abstraction of concrete machine concerns (bits,
-  registers) allowing developers focus on abstract concepts (data structures, operations)
-- Time-sharing: Being able to perform more than one operation with the CPU
-- Unified programming environments: Extrapolating I think this includes package
-  managers and using open-source software and libraries
-
-As for the proposed solutions to fix the essence so far:
-
-- More high level languages won't solve the problem, they just simplify the
-  abstractions for data flow and structures
-- Paradigms do not solve the problem (if they did, there wouldn't be a
-  discussion between using oop or functional or whatever)
-- On artificial inteligence, expert systems and automatic programming, I'll
-  quote verbatim this: *"the hard thing about building software is deciding
-  what to say, not saying it"* and here's a
-  [demo](https://www.youtube.com/watch?v=Xw_qbJp52cY) that shows the status
-  quo. How would it handle actual complexity?
-- For graphical programming I guess the "state of the art" is Unreal Engine's
-  Blueprint Visual Scripting but
-  [here](https://forums.unrealengine.com/t/how-tidy-multiple-line-traces/242770/7)
-  is why I think that is a step in the wrong direction 
-- I don't comments on the rest but to summarize
-    - Program Verification: Automated testing? I dunno ¯\_(ツ)_/¯ 
-    - Environments and tools: The newer tools seem to be going backwards,
-      adding even more unnecessary complexity
-    - workstations: Computers are way more powerful than we know. We just got
-      used to lousy and slow software.
-
-
-@Promising Attacks on the Conceptual Essence Page 12
-
-[Source](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)
-
-======================================================================================================
-
-**On The only unbreakable law (25 月曜日)**
-
-Basically points to Conway's Law [How committees
-invent?](https://www.melconway.com/Home/pdf/committees.pdf) as a good candidate
-for a Software Architecture law agree. He also mentions:
-- Brooke's Law which addresses Communication constraints [The mythical
-  man-month](https://www.amazon.com.mx/Mythical-Man-Month-Essays-Software-Engineering/dp/0201835959/ref=sr_1_1)
-- Amdahl's Law which addresses non parallelizable dependencies
-
-Communication within a team has (or at least should have) close-to-zero
-overhead. The only communication that has zero overhead is with oneself.
-Anywhere there is a need for communication, there are constraints that need to
-be addressed:
-- How much can I communicate. I literally mean volume of information
-- Am I communicating effectively? Can the other person/team understand what we
-  are saying?
-- Are our goals aligned? Do we want the same things?
-
-If there is any divide within an organization, you are creating the need for
-communication channels with varying bandwidth. 
-
-This adds complexity/friction which determines the kind of system you are
-capable of designing as an team. 
-
-If there is a need for a communication channel between two teams (let's say
-infrastructure and development) there is inevitably going to be some sort of
-responsibility segregation given it removes the need for given communication
-channel, or at least reduces the amount of information that has to go through
-
-Any kind of organizational structure created (for the orgchart or the codebase)
-comes from the need of simplifying a problem that may be too complex to solve
-with the current capabilities available. Divide and conquer as some may say.
-But its adding accidental complexity to the actual problem.
-
-[Source](https://www.youtube.com/watch?v=5IUj1EZwpJY)
 
 ======================================================================================================
 
@@ -220,3 +35,8 @@ But its adding accidental complexity to the actual problem.
 
 ======================================================================================================
 
+## November
+
+**On DLLs ()**
+
+[Source](https://www.youtube.com/watch?v=JPQWQfDhICA)
