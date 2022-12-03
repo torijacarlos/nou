@@ -27,10 +27,14 @@ File titles hopefully are enough to find stuff.
 
 ## Projects 
 
-- Personal finance application in
-  [Python](https://github.com/torijacarlos/kane)
+- Personal finance application in [~~Python~~ Rust](https://github.com/torijacarlos/kane)
 	
 ### Learning
+
+- Rust
+    - The Rust Lang Book 
+        [Let's Get Rusty videos](https://www.youtube.com/playlist?list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8)
+        /[Book](https://doc.rust-lang.org/book/)
 
 - C/C++
     - Building a game engine with C/C++ with @cmuratori's

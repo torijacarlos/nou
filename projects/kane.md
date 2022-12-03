@@ -10,5 +10,8 @@ I'm mostly using it to:
 Todo's:
 
 - [ ] Create module to serialize `chrono::DateTime` with `serde`
-- [ ] Create API to [get](https://developers.belvo.com/reference/retrieveaccounts) `Account` information attached to `link`
+- [x] Create API to [get](https://developers.belvo.com/reference/retrieveaccounts) `Account` information attached to `link`
+- [ ] Implement payment planner for debt. (Reimplement the script I had in python)
+- [ ] Implement some sort of (local) caching/storage to remove unnecessary api calls to belvo
+- [ ] Get Account transactions
 

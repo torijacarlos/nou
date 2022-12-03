@@ -40,3 +40,12 @@ This was a cool conf, want to watch it again and pull some reference
 **On DLLs ()**
 
 [Source](https://www.youtube.com/watch?v=JPQWQfDhICA)
+
+==========
+
+## December
+
+**On Rust Traits**
+
+
+[Source](https://www.youtube.com/watch?v=grU-4u0Okto)
