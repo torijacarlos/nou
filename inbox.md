@@ -47,5 +47,20 @@ This was a cool conf, want to watch it again and pull some reference
 
 **On Rust Traits**
 
-
 [Source](https://www.youtube.com/watch?v=grU-4u0Okto)
+
+**On Rust Closures**
+
+Better explanation compared to the book's content, specially regarding FnOnce and FnMut
+
+[Source](https://www.youtube.com/watch?v=bgZa9VRBhYU)
+
+**On Memory layout**
+
+[Source](https://www.youtube.com/watch?v=rDoqT-a6UFg&list=WL&index=10&ab_channel=Sreekanth)
+
+**On Audio**
+
+[Source](https://www.youtube.com/watch?v=Vjm--AqG04Y)
+[How Sounds Get Into Games - Fundamentals Of Game Audio Implementation](https://www.youtube.com/watch?v=kPDXmWxnFKY)
+[Game Audio Learning Resources](https://docs.google.com/spreadsheets/d/1fcuhGEesLC_PWCwY3dIwLgF774sKswOwIcZECWiH7Xo/edit#gid=0)
